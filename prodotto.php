@@ -43,6 +43,11 @@ class Prodotto {
                         <span>€ '.$this->price.'</span>
                     </div>
                   </div>';
+        }else{
+            echo '<div class="card error">
+                    <h2>ERRORE: CATEGORIA PRODOTTO SBAGLIATA</h2>
+                    <p>(categoria non appartenente alle categorie disponibili in file : "categories.php".)</p>
+                  </div>';
         }
     }
 }

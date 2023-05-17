@@ -3,46 +3,7 @@ require_once __DIR__ . './prodotto.php';
 require_once __DIR__ . './categories.php';
 
 // Classe Cibo
-class Cibo extends Prodotto {
 
-    // data di scadenza 
-    // gusto
-    public function __construct($immagine, $titolo, $prezzo, $categoria) {
-        parent::__construct($immagine, $titolo, $prezzo, $categoria);
-    }
-
-    public function stampaCard() {
-        parent::stampaCard();
-        echo "Tipo di articolo: Cibo<br>";
-    }
-}
-
-// Classe Gioco
-class Gioco extends Prodotto {
-    public function __construct($immagine, $titolo, $prezzo, $categoria) {
-        parent::__construct($immagine, $titolo, $prezzo, $categoria);
-    }
-
-    public function stampaCard() {
-        parent::stampaCard();
-        echo "Tipo di articolo: Gioco<br>";
-    }
-}
-
-// Classe Cuccia
-class Cuccia extends Prodotto {
-
-    // dimensioni
-    // materiale
-    public function __construct($immagine, $titolo, $prezzo, $categoria) {
-        parent::__construct($immagine, $titolo, $prezzo, $categoria);
-    }
-
-    public function stampaCard() {
-        parent::stampaCard();
-        echo "Tipo di articolo: Cuccia<br>";
-    }
-}
 
 // Utilizzo delle classi
 
@@ -65,6 +26,10 @@ $prodotto3->stampaCard();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     

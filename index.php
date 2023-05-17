@@ -1,21 +1,6 @@
 <?php 
 require_once __DIR__ . './prodotto.php';
-require_once __DIR__ . './categories.php';
-
-// Classe Cibo
-
-
-// Utilizzo delle classi
-
-$prodotto1 = new Cibo("immagine1.jpg", "Cibo per cani", 10.99, "Cani");
-$prodotto1->stampaCard();
-
-$prodotto2 = new Gioco("immagine2.jpg", "Gioco per gatti", 5.99, "Gatti");
-$prodotto2->stampaCard();
-
-$prodotto3 = new Cuccia("immagine3.jpg", "Cuccia per cani", 49.99, "Cani");
-$prodotto3->stampaCard();
-
+require_once __DIR__ . './store-db.php';
 ?>
 
 

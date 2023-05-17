@@ -30,6 +30,7 @@ class Prodotto {
                         <span>€ '.$this->price.'</span>
                     </div>
                   </div>';
+
         }else if($this->category === "gatto"){
             echo '<div class="card cat">
                     <div class="card-head">
@@ -43,6 +44,7 @@ class Prodotto {
                         <span>€ '.$this->price.'</span>
                     </div>
                   </div>';
+                  
         }else{
             echo '<div class="card error">
                     <h2>ERRORE: CATEGORIA PRODOTTO SBAGLIATA</h2>

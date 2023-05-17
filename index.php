@@ -1,6 +1,6 @@
 <?php 
 require_once __DIR__ . './prodotto.php';
-
+require_once __DIR__ . './categories.php';
 
 // Classe Cibo
 class Cibo extends Prodotto {

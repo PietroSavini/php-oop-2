@@ -1,6 +1,8 @@
 <?php 
 require_once __DIR__ . './prodotto.php';
 require_once __DIR__ . './store-db.php';
+require_once __DIR__ . './product-categories.php';
+require_once __DIR__ . './categories.php';
 ?>
 
 
@@ -17,6 +19,10 @@ require_once __DIR__ . './store-db.php';
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <?php  foreach ($in_store as $value) 
+            $value->stampaCard()
+        ?>
+    </div>
 </body>
 </html>

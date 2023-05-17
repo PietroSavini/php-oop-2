@@ -11,8 +11,13 @@
         }
 
         public function stampaCard() {
-            parent::stampaCard();
-            echo "Tipo di articolo: Cibo<br>";
+            parent::stampaCard();   
+            echo '      <span>gusto: '.$this->type.'</span> <br>   
+                        <span> data di scadenza: '.$this->expiration.'</span>
+                    </div>
+                </div>
+            '
+            ;
         }
     }
 
@@ -24,7 +29,11 @@
 
         public function stampaCard() {
             parent::stampaCard();
-            echo "Tipo di articolo: Gioco<br>";
+            echo '  </div>
+                </div>
+            ';    
+            
+     
         }
     }
 
@@ -32,17 +41,21 @@
     class Cuccia extends Prodotto {
 
         private $dimensions;
-        private $materials;
+        private $material;
     
-        public function __construct($_dimension,$_material,$_img,$_title,$_description,$_quantity, $_price, $_category) {
+        public function __construct($_dimensions,$_material,$_img,$_title,$_description,$_quantity, $_price, $_category) {
             parent::__construct($_img,$_title,$_description,$_quantity, $_price, $_category);
-            $this->dimensions = $_dimension;
-            $this->materials = $_material;
+            $this->dimensions = $_dimensions;
+            $this->material = $_material;
         }
 
         public function stampaCard() {
             parent::stampaCard();
-            echo "Tipo di articolo: Cuccia<br>";
+                echo '  <span>dimensioni: '.$this->dimensions.'</span> <br>   
+                        <span>materiale: '.$this->material.'</span>
+                    </div>
+                </div>
+            ';
         }
     }
 
